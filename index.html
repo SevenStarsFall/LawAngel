@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-Case-v1 • ER Angel • Hope for Michael</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+        
+        body { margin:0; font-family:'Inter',sans-serif; background:linear-gradient(to bottom,#f8f4f0,#e8d9c0); color:#333; line-height:1.75; }
+        header { background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.65)),url('https://picsum.photos/id/1015/2000/800') center/cover; color:white; text-align:center; padding:100px 20px 70px; }
+        .hero-title { font-family:'Playfair Display',serif; font-size:3rem; margin:0 0 12px; text-shadow:0 4px 20px rgba(0,0,0,0.7); }
+        .urn-plaque { background:white; border-radius:18px; padding:28px 32px 32px; margin-bottom:40px; box-shadow:0 12px 35px rgba(0,0,0,0.1); position:relative; cursor:pointer; transition:transform 0.2s; }
+        .urn-plaque:hover { transform:translateY(-6px); }
+        .urn-icon { position:absolute; top:-28px; left:35px; font-size:58px; background:white; width:78px; height:78px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 25px rgba(0,0,0,0.12); border:5px solid #d4af37; }
+        h2 { font-family:'Playfair Display',serif; color:#2c1e12; margin-top:30px; }
+        .plaque-title { font-size:1.45rem; font-weight:600; margin:10px 0 15px; color:#2c1e12; }
+        .section { display:none; background:white; border-radius:16px; padding:35px; margin:30px auto; max-width:920px; box-shadow:0 10px 30px rgba(0,0,0,0.08); }
+        .active { display:block; }
+        .document-box { background:#fff9e6; border-left:7px solid #d4af37; padding:25px; margin:25px 0; font-family:monospace; white-space:pre-wrap; line-height:1.6; font-size:0.95rem; }
+        .instructions { background:#f8f4f0; padding:20px; border-radius:12px; margin:20px 0; }
+        footer { background:#2c1e12; color:#ddd; text-align:center; padding:50px 20px; }
+        .banner { width:100%; max-height:380px; object-fit:cover; border-radius:12px; margin:25px 0; box-shadow:0 15px 40px rgba(0,0,0,0.15); }
+        .urgent { color:#b33; font-weight:600; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="hero-title">ER Angel</h1>
+        <p style="font-size:1.35rem; max-width:720px; margin:0 auto;">Hope Carries Us Home • For Michael-James Dion Stodola</p>
+        <p style="margin-top:20px;">A simple, loving guide for a mom fighting for her son with all her heart</p>
+    </header>
+
+    <div style="max-width:980px; margin:0 auto; padding:40px 20px;">
+
+        <img src="https://picsum.photos/id/1015/2000/600" alt="ER Nurse Angel carrying a young man from the ocean" class="banner">
+
+        <h2 style="text-align:center; margin:40px 0 30px;">Michael is scheduled for sentencing soon. Click each plaque for the exact document + easy instructions.</h2>
+        <p style="text-align:center; color:#b33; font-weight:600;">Do these steps right away — start with #1 and #2 today if possible.</p>
+
+        <!-- Plaque 1 -->
+        <div class="urn-plaque" onclick="toggleSection('sec1')">
+            <div class="urn-icon">🏛️</div>
+            <div class="plaque-title">1. Get New Defense Counsel or Public Defender Immediately (Most Important Right Now)</div>
+            <p>Replace the lawyer who took $12,000 and did little. New counsel can stop or delay jail time and use Michael's diagnoses and young age.</p>
+        </div>
+        <div id="sec1" class="section">
+            <h2>1. Contact New Counsel Today</h2>
+            <div class="instructions">
+                <strong>Simple Steps for Mom:</strong><br>
+                1. Call the Norman County Courthouse or Ninth Judicial District Public Defender’s Office (218 area code — ask for criminal division).<br>
+                2. Say: “My son Michael-James Dion Stodola has case 54-CR-25-26. We need new counsel right away because the previous attorney did almost no work after a large retainer, and sentencing is coming soon.”<br>
+                3. Mention the existing diagnoses (ADHD, learning disorders) and that Michael was only 19 at the time.<br>
+                Bring printed character letters and the doctor’s report.
+            </div>
+        </div>
+
+        <!-- Plaque 2 -->
+        <div class="urn-plaque" onclick="toggleSection('sec2')">
+            <div class="urn-icon">🏛️</div>
+            <div class="plaque-title">2. Complaint to Recover the $12,000 Retainer</div>
+            <p>You did far more than the lawyer because you care so deeply. Ask for the unearned fees back.</p>
+        </div>
+        <div id="sec2" class="section">
+            <h2>2. Attorney Fee Complaint — Exact Wording</h2>
+            <div class="instructions">File online at the Minnesota Office of Lawyers Professional Responsibility or mail it. Use this:</div>
+            <div class="document-box">
+I am the mother of Michael-James Dion Stodola, case 54-CR-25-26 in Norman County. I paid attorney [Attorney Name] a retainer of $12,000 because I was desperate to help my son. 
+
+I feel I did so much more work myself because I care deeply. The attorney performed little to no meaningful work — almost no discovery review, no strong motions using Michael's diagnoses or young age, and very little communication. 
+
+This has left my son without proper help as he faces sentencing. I respectfully request an investigation and return of the unearned portion of the retainer.
+
+Thank you.
+            </div>
+        </div>
+
+        <!-- Plaque 3 -->
+        <div class="urn-plaque" onclick="toggleSection('sec3')">
+            <div class="urn-icon">🏛️</div>
+            <div class="plaque-title">3. Supplemental Doctor Letter for Rule 20.01 Competency & Mitigation</div>
+            <p>Use the existing October 24, 2025 diagnosis. Ask the doctor to add how ADHD and learning disorders affect Michael's ability to understand court details and assist in his defense. Michael's young age (19 at the time) makes this even stronger.</p>
+        </div>
+        <div id="sec3" class="section">
+            <h2>3. Doctor Letter for Court — Suggested Wording to Give Your Doctor</h2>
+            <div class="instructions">Print this and ask the diagnosing doctor (or any treating psychologist/psychiatrist) to adapt and sign on letterhead. Mention Rule 20.01.</div>
+            <div class="document-box">
+To Whom It May Concern / Honorable Judge Claesson-Huseby:
+
+Re: Michael-James Dion Stodola, DOB [insert], Case No. 54-CR-25-26
+
+I previously diagnosed Michael with Specific Learning Disorder (impairment in reading/Dyslexia), ADHD Combined Presentation, and Specific Learning Disorder with impairment in mathematics/written expression.
+
+These conditions create significant deficits in executive functioning, sustained attention, processing speed, and organizing complex information. As a result, Michael has substantial difficulty understanding the finer details of court proceedings and fully assisting in his own defense — key elements under Minnesota Rule of Criminal Procedure 20.01 for competency to stand trial or participate meaningfully.
+
+At the time of the alleged events, Michael was only 19 years old. His cognitive challenges, combined with his youth, significantly limited his judgment and ability to appreciate long-term consequences.
+
+I recommend a formal Rule 20.01 evaluation and strongly support accommodations such as simplified explanations, extra time, and treatment-focused sentencing rather than incarceration. Michael has strong family support and is likely to respond well to community-based supervision and treatment.
+
+Please contact me for the full report or further information.
+
+Sincerely,
+[Doctor Name, Credentials]
+            </div>
+            <p class="urgent">If the doctor cannot update quickly, submit the original diagnosis with a short note from mom explaining the connection to court understanding.</p>
+        </div>
+
+        <!-- Plaque 4 -->
+        <div class="urn-plaque" onclick="toggleSection('sec4')">
+            <div class="urn-icon">🏛️</div>
+            <div class="plaque-title">4. Mom's Character & Mitigation Letter to the Judge</div>
+            <p>Your loving words as his mom, highlighting his youth, diagnoses, your hard work, and the judge’s compassion.</p>
+        </div>
+        <div id="sec4" class="section">
+            <h2>4. Character & Mitigation Letter — Exact Wording (Copy & Personalize)</h2>
+            <div class="document-box">
+[Your Full Name]  
+[Your Address]  
+[Date]
+
+Honorable Annie P. Claesson-Huseby  
+Norman County District Court  
+
+Re: State v. Michael-James Dion Stodola, Case 54-CR-25-26
+
+Dear Judge,
+
+I am Michael’s mother, a single mom raising five children and grandchildren while working hard every day. I have stood by him through everything because he has a good heart.
+
+Michael was only 19 years old at the time of the alleged events. He has been diagnosed with ADHD, dyslexia, and learning disorders that make it hard for him to process complex information and understand all the details of the court system. I believe this affected his ability to fully participate in his defense.
+
+I have done everything I can to help him — more than the previous lawyer in many ways — because I care so deeply. Michael is remorseful and wants to become a better man with his family’s support.
+
+At the hearing, I saw tears in your eyes. It gave me hope that you are looking for a compassionate way forward. I respectfully ask the Court to consider a stayed sentence, probation with treatment, or community supervision instead of sending him to prison with hardened criminals. He was so young, and he has the diagnoses and family support to succeed outside of jail.
+
+Thank you for your kindness and for considering my son’s future.
+
+Sincerely,  
+[Your Full Name]
+            </div>
+        </div>
+
+        <!-- Plaque 5 -->
+        <div class="urn-plaque" onclick="toggleSection('sec5')">
+            <div class="urn-icon">🏛️</div>
+            <div class="plaque-title">5. Urgent Note for New Attorney – Judge’s Tears & Youth/Diagnoses</div>
+            <p>Give this to the new lawyer to use at sentencing or to request delay.</p>
+        </div>
+        <div id="sec5" class="section">
+            <h2>5. Note for the Attorney</h2>
+            <div class="document-box">
+Please emphasize at sentencing or in any motion:
+- Michael was only 19 at the time of the alleged incidents.
+- He has diagnosed ADHD Combined, Specific Learning Disorders (reading, math/written expression) that impair executive functioning and ability to understand complex court proceedings (supporting Rule 20.01 concerns).
+- The judge appeared moved with tears in her eyes and seemed to bond with the family — she may be looking for a reason to impose probation/treatment instead of prison.
+- Strong family support from his single mother who has five children and has worked tirelessly on his behalf.
+- Request a downward departure, stayed sentence, or treatment-focused resolution.
+            </div>
+        </div>
+
+        <div style="text-align:center; margin:50px 0; font-style:italic; color:#555;">
+            You are a strong, loving mom. One step, one document, one day at a time — with help from good people and a compassionate judge — Michael has real hope. ER Angel walks with you.
+        </div>
+
+    </div>
+
+    <footer>
+        <p>This page was created with love from publicly available information to help a dedicated single mom. It is not legal advice. Work closely with a licensed Minnesota attorney or public defender immediately — especially with sentencing approaching.</p>
+        <p>MS-Case-v1.html • Ninth Judicial District • Norman County, Minnesota</p>
+    </footer>
+
+    <script>
+        function toggleSection(id) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            const section = document.getElementById(id);
+            if (section) {
+                section.classList.add('active');
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+</body>
+</html>
